@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18">
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <path fill="#FED843" d="M18.548 6.73L12.128 5.803 9.274 0.02 6.42 5.803 0 6.73 4.657 11.231 3.567 17.586 9.274 14.586 14.982 17.586 13.892 11.231z" transform="translate(-708 -630) translate(708.452 630)"/>
+                <path fill="#FABE2C" d="M13.892 11.231L18.548 6.73 12.128 5.803 9.274 0.02 9.274 14.586 14.982 17.586z" transform="translate(-708 -630) translate(708.452 630)"/>
+            </g>
+        </g>
+    </g>
+</svg>

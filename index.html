@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" id="html-main">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="”Content-Language”" content="”es”" />
+		<meta name="”distribution”" content="”global”" />
+
+		<% if (process.env.ADMIN_CODE === 'japisale') { %>
+		<title>Japisale</title>
+		<% } else { %>
+		<title>CasaMarket</title>
+		<% } %> <% if (process.env.ADMIN_CODE === 'japisale') { %>
+		<link rel="icon" href="/static/img/japisale/favicon-japisale.png" />
+		<% } else { %>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/static/img/icons/favicon-32x32.png"
+		/>
+		<% } %>
+
+		<!--[if IE
+			]><link rel="shortcut icon" href="/static/img/icons/favicon.ico"
+		/><![endif]-->
+		<!-- Add to home screen for Android and modern mobile browsers -->
+		<!-- <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json"> -->
+		<meta name="theme-color" content="#4DBA87" />
+		<!-- Add to home screen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-title" content="maki-admin" />
+		<link
+			rel="apple-touch-icon"
+			href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/apple-icon-152x152.png"
+		/>
+		<link
+			rel="mask-icon"
+			href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/safari-pinned-tab.svg"
+			color="#4DBA87"
+		/>
+		<!-- Add to home screen for Windows -->
+		<meta
+			name="msapplication-TileImage"
+			content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/ms-icon-icon-144x144.png"
+		/>
+		<meta name="msapplication-TileColor" content="#000000" />
+		<link
+			rel="preload"
+			href="//fonts.googleapis.com/css?family=Material+Icons"
+			as="style"
+		/>
+		<link
+			rel="preload"
+			href="<%= htmlWebpackPlugin.files.publicPath %>static/fonts.css"
+			as="style"
+		/>
+	</head>
+
+	<body>
+		<noscript> This is your fallback content in case JavaScript fails to load. </noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons" />
+		<link
+			rel="stylesheet"
+			href="<%= htmlWebpackPlugin.files.publicPath %>static/fonts.css"
+		/>
+	</body>
+</html>

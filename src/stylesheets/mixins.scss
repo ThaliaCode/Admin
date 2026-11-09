@@ -1,0 +1,59 @@
+@mixin flex-center {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin flex-between {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex-around {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@mixin flex-end {
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin flex-start {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin flex-right {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+@mixin btn ($bg, $color, $borRadius, $height, $width, $margin, $align, $font, $size) {
+    background-color: map-get($colors, $bg);
+    border-radius: $borRadius;
+    color: $color;
+    font-family: map-get($fonts, $font);
+    font-size: map-get($sizes, $size);
+    height: $height;
+    line-height: $height;
+    margin: $margin;
+    text-align: $align;
+    width: $width;
+}
+@mixin active-btn (){
+    transform: scale(0.9);
+}
+@mixin txt-config ($font, $size) {
+    font-family: map-get($fonts, $font);
+    font-size: map-get($sizes, $size);
+}
+@mixin vertical-displacement {
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	transition-property: height;
+	transition-duration: 450ms;
+}

@@ -1,0 +1,10 @@
+export default {
+  REQUESTED: 1,
+  ON_THE_WAY: 2,
+  DELIVERED: 3,
+  CANCELED: 4,
+  CONFIRMED: 5,
+  READY_FOR_PICKUP: 6,
+  ASSIGNED: 7,
+  DRAFT: 8
+};

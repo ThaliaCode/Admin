@@ -1,0 +1,5 @@
+export default {
+	CONVERTED: 3,
+	PARTIALLY_CONVERTED: 2,
+	PENDING: 1,
+};

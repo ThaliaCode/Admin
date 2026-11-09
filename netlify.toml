@@ -1,0 +1,15 @@
+# https://stackoverflow.com/questions/58065603/netlify-renders-404-on-page-refresh-using-react-and-react-router
+
+[build]
+command = "npm run build"
+publish = "dist"
+
+[build.environment]
+NODE_VERSION = "18.20.8"
+NPM_VERSION = "10.8.2"
+NPM_FLAGS = "--legacy-peer-deps"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200

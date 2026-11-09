@@ -1,0 +1,17 @@
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+@function color($color) {
+  @return map-get($colors, $color);
+}
+@function size($size) {
+  @return map-get($sizes, $size);
+}
+@function font($font) {
+  @return map-get($fonts, $font);
+}
+@function weight($weightValue) {
+  @return map-get($weight, $weightValue);
+}

@@ -1,0 +1,6 @@
+{
+  "type": "patch",
+  "commit": true,
+  "tag": true,
+  "push": true
+}
